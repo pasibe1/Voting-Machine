@@ -11,11 +11,11 @@ admin9045
 
 USER IDs:
 
-voter182
-voter648
-voter937
-voter729
-voter115
+voter182  
+voter648  
+voter937  
+voter729  
+voter115  
 
 Enter an admin ID to both access the machine and to view voting results.
 After submitting any of the admin IDs, the user mnust enter any of the voter IDs to go to the voting screen.
