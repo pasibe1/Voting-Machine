@@ -1,0 +1,155 @@
+.container-1{
+  height: 100vh;
+  width: 100vw;
+  background: url(images/flag.jpg);
+  background-size: cover;
+}
+
+.admin-label{
+  font-weight: 600;
+  color: white;
+  margin-left: 53px;
+  margin-top: 200px;
+}
+
+#admin-submit-btn{
+  margin-top: 15px;
+  margin-left: 135px;
+}
+
+.admin-form{
+  opacity: 1;
+  display: block;
+}
+
+.user-label{
+  font-weight: 600;
+  color: white;
+  margin-left: 52px;
+  margin-top: 200px;
+}
+
+#user-submit-btn{
+  margin-top: 15px;
+  margin-left: 135px;
+}
+
+.user-form{
+  opacity: 0;
+  display: none;
+}
+
+.question-background{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  left: 40px;
+  top: 175px;
+  background-color: white;
+  border-radius: 20px;
+  opacity: 0;
+  display: none;
+}
+
+.question-1{
+  position: relative;
+  top: 75px;
+}
+
+.label-1{
+  position: relative;
+  left: 15px;
+}
+
+.submit-1{
+  position: relative;
+  top: 20px;
+  left: 82px;
+}
+
+.second-race{
+  position: relative;
+  top: 20px;
+  left: 2px;
+}
+
+.second-race input, .second-race input ~ label{
+  position: relative;
+  left: 90px;
+}
+
+.submit-2{
+  position: relative;
+  top: 18px;
+  left: 85px;
+}
+
+.third-race{
+  position: relative;
+  top: 65px;
+  right: 5px;
+}
+
+.third-race input, .third-race input ~ label{
+  position: relative;
+  left: 105px;
+}
+
+.submit-3{
+  position: relative;
+  top: 70px;
+  left: 85px;
+}
+
+.see-results{
+  position: fixed;
+  display: inline;
+  float: right;
+  top: 93.5vh;
+  right: .1vw;
+}
+
+.back-button{
+  position: fixed;
+  display: none;
+  float: right;
+  top: 93.5vh;
+  right: 8.5vw;
+  opacity: 0;
+}
+
+.results-background{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  left: 40px;
+  top: 175px;
+  background-color: white;
+  border-radius: 20px;
+  display: none;
+  opacity: 0;
+}
+
+.results-title{
+  position: relative;
+  top: 15px;
+  left: 62px;
+}
+
+.results-1{
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+.results-2{
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.results-3{
+  position: relative;
+  top: 60px;
+  left: 25px;
+}
