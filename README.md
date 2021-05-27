@@ -5,9 +5,9 @@ A voting machine website made for demonstrating vulnerabilities in electronic vo
 
 ADMIN IDs:
 
-admin2408
-admin8034
-admin9045
+admin2408 
+admin8034 
+admin9045 
 
 USER IDs:
 
