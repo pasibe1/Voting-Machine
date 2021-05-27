@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!-- jQueryUI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+
+    <title>Vote Here!</title>
+  </head>
+  <body>
+    <div class="container-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="question-background" id="Q1">
+              <div class="form-group question-1">
+                <label for="first-race" class="label-1">Which name is best for a male?</label>
+                <select class="form-control" id="first-race">
+                  <option value="Bob">Bob</option>
+                  <option value="John">John</option>
+                  <option value="Mark">Mark</option>
+                  <option value="Robert">Robert</option>
+                  <option value="Pascal">Pascal</option>
+                </select>
+                <button type="button" class="btn btn-primary vote-submit submit-1">Submit</button>
+              </div>
+            </div>
+
+            <div class="results-background" id="R1">
+              <h5 class="results-title">Race 1 Results</h5>
+              <p class="results-1">Bob: <span id="r1-result1"></span></p>
+              <p class="results-1">John: <span id="r1-result2"></span></p>
+              <p class="results-1">Mark: <span id="r1-result3"></span></p>
+              <p class="results-1">Robert: <span id="r1-result4"></span></p>
+              <p class="results-1">Pascal: <span id="r1-result5"></span></p>
+            </div>
+          </div>
+            <div class="col-4">
+              <div class="form-group admin-form">
+                <label for="admin-login" class="admin-label">Please enter you administrator ID.</label>
+                <br \>
+                <input id="admin-login" class="form-control" type="text" placeholder="Admin ID">
+                </input>
+                <button type="button" class="btn btn-primary" id="admin-submit-btn">Submit</button>
+              </div>
+
+              <div class="form-group user-form">
+                <label for="user-login" class="user-label">Please enter you voter ID to begin.</label>
+                <br \>
+                <input id="user-login" class="form-control" type="text" placeholder="User ID">
+                </input>
+                <button type="button" class="btn btn-primary" id="user-submit-btn">Submit</button>
+              </div>
+
+              <div class="question-background" id="Q2">
+                <div class="form-check second-race">
+                  <label for="">Choose 2 names that are best for females.</label>
+                  <br \>
+                  <input class="form-check-input" type="checkbox" value="Mary" id="check-1">
+                  <label for="check-1">Mary</label>
+                  <br \>
+                  <input class="form-check-input" type="checkbox" value="Jane" id="check-2">
+                  <label for="check-2">Jane</label>
+                  <br \>
+                  <input class="form-check-input" type="checkbox" value="Martha" id="check-3">
+                  <label for="check-3">Martha</label>
+                  <br \>
+                  <input class="form-check-input" type="checkbox" value="Rose" id="check-4">
+                  <label for="check-4">Rose</label>
+                </div>
+                <button type="button" class="btn btn-primary vote-submit submit-2">Submit</button>
+              </div>
+
+              <div class="results-background" id="R2">
+                <h5 class="results-title">Race 2 Results</h5>
+                <p class="results-2">Mary: <span id="r2-result1"></span></p>
+                <p class="results-2">Jane: <span id="r2-result2"></span></p>
+                <p class="results-2">Martha: <span id="r2-result3"></span></p>
+                <p class="results-2">Rose: <span id="r2-result4"></span></p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="question-background" id="Q3">
+                <div class="form-check third-race">
+                  <label for="">Do pinapples belong on pizza?</label>
+                  <br \>
+                  <input class="form-check-input" type="radio" value="Yes" id="radio-1" name="radio-option">
+                  <label for="radio-1">Yes</label>
+                  <br \>
+                  <input class="form-check-input" type="radio" value="No" id="radio-2" name="radio-option">
+                  <label for="radio-2">No</label>
+                </div>
+                <button type="button" class="btn btn-primary vote-submit submit-3">Submit</button>
+              </div>
+
+              <div class="results-background" id="R3">
+                <h5 class="results-title">Race 3 Results</h5>
+                <p class="results-3">Yes: <span id="r3-result1"></span></p>
+                <p class="results-3">No: <span id="r3-result2"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-success see-results">See Results</button>
+        <button class="btn btn-danger back-button">Back to Admin</button>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
